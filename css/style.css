@@ -14,3 +14,28 @@
     --red: #d72a2c;
     --green: #4bc800;
 }
+
+/* Header */
+.header-container{
+    background-color: var(--black);
+    height: 60px;
+}
+
+/* Regole per tutti i bottoni */
+button{
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+}
+
+/* Bottoni Header */
+.header-container .button-container{
+    float: right;
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+.header-container .button-container button{
+    background-color: var(--lightgrey);
+    border-radius: 5px;
+    padding: 0.3rem;
+}
