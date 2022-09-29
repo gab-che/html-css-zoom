@@ -30,7 +30,7 @@
 .card-container{
     flex-grow: 1;
     background-color: var(--black);
-    max-height: calc(100vh - 140px);
+    height: calc(100vh - 110px);
     overflow: scroll;
     padding: 5vh 15vh;
     flex-wrap: wrap;
@@ -39,12 +39,11 @@
 
 .footer-container{
     flex-shrink: 2;
-    height: 100px;
+    height: 70px;
     background-color: var(--darkgrey);
     justify-content: space-between;
     color: var(--white);
     align-items: center;
-    padding: 1rem;
 }
 
 .flex{
@@ -95,15 +94,48 @@ button{
 }
 
 /* Footer */
-.footer-container span,
 .footer-container i{
     font-size: 1rem;
 }
 
+.footer-container span{
+    font-size: .8rem;
+}
+
+.footer-container .button-icon{
+padding-bottom: .6rem;
+}
+
 .footer-container .button-container{
+    column-gap: .6rem;
+}
+
+.buttons-left,
+.buttons-center{
     column-gap: 1rem;
+}
+
+.buttons-left{
+    padding-left: .5rem;
+}
+
+.buttons-right{
+    height: 100%;
+    padding: 1rem;
 }
 
 .button-arrow{
     align-self: center;
+}
+
+.green{
+    color: var(--green);
+}
+
+.red{
+    color: var(--red);
+}
+
+.grey-bg{
+    background-color: var(--lightgrey);
 }
