@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="main-container">
+    <div class="main-container flex">
 
         <!-- Header altezza fissa bottoni in alto a destra -->
         <div class="header-container">
@@ -35,7 +35,7 @@
         </div>
 
         <!-- Card container Viewport height? -->
-        <div class="card-container">
+        <div class="card-container flex">
             
             <!-- Card singole-->
             <div class="card">
@@ -426,23 +426,29 @@
         </div>
 
         <!-- Footer altezza fissa -->
-        <div class="footer-container">
+        <div class="footer-container flex">
 
             <!-- Bottoni sx -->
             <div class="buttons-left">
                 
                 <!-- Bottone 1 -->
                 <!-- Contenitore bottone -->
-                <div class="button-container">
+                <div class="button-container flex">
 
                     <!-- Parte sx bottone con icona e testo -->
-                    <div class="button-container-left">
-                        <div class="button-icon"></div>
-                        <div class="button-text"></div>
-                    </div>
+                    <button class="button-container-left">
+                        <div class="button-icon">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                        </div>
+                        <div class="button-text">
+                            <span>Mute</span>
+                        </div>
+                    </button>
 
                     <!-- Parte dx bottone con freccia -->
-                    <div class="button-arrow"></div>
+                    <div class="button-arrow">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
                 </div>
 
                 <!-- Bottone 2 -->
@@ -462,12 +468,12 @@
 
             <!-- Bottoni centro -->
             <div class="buttons-center">
-                
+                ciao
             </div>
 
             <!-- Bottoni dx -->
             <div class="buttons-right">
-                
+                ciao
             </div>
         </div>
     </div>
