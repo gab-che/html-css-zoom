@@ -10,6 +10,7 @@
     --black: #000000;
     --darkgrey: #222222;
     --lightgrey: #4a4a4a;
+    --lightgreytrans: #4a4a4ae0;
     --white: #ffffff;
     --red: #d72a2c;
     --green: #4bc800;
@@ -66,12 +67,25 @@ button{
 
 /* Sezione centrale */
 .card{
-    background-color: antiquewhite;
     width: calc(100% / 7 - 0.5rem);
+    height: 150px;
     margin-left: .5rem;
     margin-bottom: .5rem;
-    /* Altezza forzata da togliere */
-    height: 100px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-name{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--white);
+    background-color: var(--lightgreytrans);
+    padding: .2rem;
 }
 
 /* Footer */
