@@ -15,10 +15,34 @@
     --green: #4bc800;
 }
 
-/* Header */
+/* Regole per contenitori principali */
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .header-container{
+    flex-shrink: 2;
     background-color: var(--black);
     height: 60px;
+}
+
+.card-container{
+    flex-grow: 1;
+    background-color: var(--black);
+    height: calc(100vh - 160px);
+    padding: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* Da togliere */
+    border: 3px solid white;
+    color: white;
+}
+
+.footer-container{
+    flex-shrink: 2;
+    height: 100px;
+    background-color: var(--darkgrey);
 }
 
 /* Regole per tutti i bottoni */
@@ -28,7 +52,7 @@ button{
     color: var(--white);
 }
 
-/* Bottoni Header */
+/* Header */
 .header-container .button-container{
     float: right;
     margin: 0.5rem 0.5rem 0 0;
@@ -39,3 +63,15 @@ button{
     border-radius: 5px;
     padding: 0.3rem;
 }
+
+/* Sezione centrale */
+.card{
+    background-color: antiquewhite;
+    width: calc(100% / 7 - 0.5rem);
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+    /* Altezza forzata da togliere */
+    height: 100px;
+}
+
+/* Footer */
